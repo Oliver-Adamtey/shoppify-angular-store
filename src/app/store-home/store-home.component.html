@@ -3,7 +3,7 @@
 <div class="form-container">
     <h2>Simple Form</h2>
 
-    <form>
+    <form (ngSubmit)="onSubmit">
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" [(ngModel)]="name" name="name" required>
