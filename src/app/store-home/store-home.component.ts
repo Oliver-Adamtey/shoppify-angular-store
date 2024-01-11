@@ -11,6 +11,6 @@ import { FormsModule } from '@angular/forms';
 export class StoreHomeComponent {
 
   name: string = '';
-  email: string = 'test@mail.com';
+  email: string = ''; 
   message: string = '';
 }
