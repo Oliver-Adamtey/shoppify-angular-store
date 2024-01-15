@@ -13,6 +13,7 @@ export class StoreHomeComponent {
   name: string = '';
   email: string = ''; 
   message: string = '';
+  isSubmitted = false;
 
 
   onSubmit(): void{
