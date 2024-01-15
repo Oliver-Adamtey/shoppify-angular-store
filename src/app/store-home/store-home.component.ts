@@ -18,6 +18,6 @@ export class StoreHomeComponent {
 
 
   onSubmit(): void{
-    console.log(this.name)
+    this.isSubmitted = true;
   }
 }
