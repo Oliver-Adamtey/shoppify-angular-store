@@ -23,15 +23,17 @@
     <table *ngIf="isSubmitted">
         <thead>
             <tr>
+                <th>#</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Message</th>
             </tr>
         </thead>
-        <tr>
-            <td>{{name}}</td>
-            <td>{{email}}</td>
-            <td>{{message}}</td>
+        <tr *ngFor="let msg of messages, let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{msg.name}}</td>
+            <td>{{msg.email}}</td>
+            <td>{{msg.message}}</td>
         </tr> 
     </table>
 <!-- 
