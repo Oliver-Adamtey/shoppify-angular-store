@@ -13,3 +13,11 @@
         margin-bottom: 10px;
     }
 }
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
