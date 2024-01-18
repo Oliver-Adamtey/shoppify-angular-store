@@ -15,9 +15,16 @@ export class StoreHomeComponent {
   email: string = ''; 
   message: string = '';
   isSubmitted = false;
-
+  messages: Array<any> = [];
 
   onSubmit(): void{
     this.isSubmitted = true;
+    this.messages.push({
+      'name': this.name,
+      'email': this.email,
+      'message': this.messages
+    });
+    console.log(this.messages);
+    
   }
 }
