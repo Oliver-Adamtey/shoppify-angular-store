@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { MessageDetailComponent } from '../message-detail/message-detail.component';
 
 @Component({
   selector: 'app-store-home',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, MessageDetailComponent],
   templateUrl: './store-home.component.html',
   styleUrl: './store-home.component.scss'
 })
