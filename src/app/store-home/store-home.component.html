@@ -46,6 +46,8 @@
     </div> -->
 
     <div class="flex-container" *ngIf="isSubmitted">
-        <app-message-detail></app-message-detail>
+        <app-message-detail
+            *ngFor="let msg of messages; let i = index"
+        ></app-message-detail> 
     </div>
 </div>
